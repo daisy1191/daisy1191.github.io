@@ -1,109 +1,236 @@
-html {
-    margin: 0px;
-}
 
 body {
-    font-family: Helvetica, Arial, sans-serif;
-    margin: 0px;
-    font-size: 1.5vw;
-}
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6, nav {
+    font-family: 'Libre Baskerville', serif;
+  }
 
+  body > header > nav > ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 
-#logo {
-    margin: 0px;
-    padding: 8px;
-    font-family: "Fredoka One", sans-serif;
-    width: 16%;
-    text-shadow: 
-    1px 1px 0px black, /* Bottom-right shadow */ 
-    -1px 1px 0px black, /* Bottom-left shadow */  
-    1px -1px 0px  black, /*Top-right shadow */  
-    -1px -1px 0px black; /*Top-left shadow */
-}
+  }
 
-
-ul {
-    margin: 0px;
-}
-
-body > header {
-    background-color: orange;
-    color: #ffffff;
+  header {
     display: flex;
-    height: 8vw;
-    align-items: center;
-    justify-content: space-around;
-    
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 20px;
+    background-image: url(gradient-background.png);
 }
 
-#nav-ul {
-    display: flex;
-}
-
-#nav-ul > li {
-    padding: 8px;
-    margin: 16px;
-}
-
-    
-body >header >nav >ul {
-
-list-style: none;
-text-decoration: none;
-}
-
-.navbutton {
-    
-    color: white;
+header a:hover {
     text-decoration: none;
-    padding: 12px;
-    border: 1px solid white;
-    border-radius: 10%;
+    
 }
 
-body > main article {
-    width: 70%;
-    margin:auto
+
+.logo img {
+    width: 200px; 
+    height: auto; 
+    object-fit: contain;
+    
 }
 
-#main-content {
+nav ul {
     display: flex;
-    justify-content: space-around;
+    list-style: none; /* Removes bullets from list items */
+    margin: 0;
+    padding: 0;
 }
 
-#main-content > div {
-    width: 80%;
+nav ul li {
+    margin: 0 10px; /* Spacing between nav items */
 }
 
-form {
-    text-align:center ;
+nav ul li a {
+    text-decoration: none; /* Removes underline from links */
+    color: #ffff; /* Adjust color as needed */
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #2FA4DA;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+
 }
 
-h2 {
+nav ul li a:hover {
+    background-color: #F9C90F; /* Warm Yellow for hover state */
+    color: #000000; /* Change text color on hover for better visibility */}
+
+    nav ul li a.active {
+        background-color: #4BAA4E; /* Eco Green for active/selected state */
+        color: #FFFFFF; /* White text for better contrast */}
+  
+  body > header > nav > ul > li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    
+    
+  }
+  
+  body {
+    background-image: url(gradient-background.png);
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically if there’s extra space */
+    padding: 20px;
+    background-color: #2A2A2A; /* Dark Grey or Black */
+    color: #FFFFFF; /* Text color to contrast with background */
+    font-family: 'Montserrat', sans-serif; /* Use body font for consistency */
+}
+
+footer p {
+    margin: 0; 
+    text-align: center; /* Center text */
+}
+
+footer a {
+    color: #F9C90F; /* Warm Yellow for links */
+    text-decoration: none; /* Remove underline */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Add underline on hover */
+    color:white ;
+}
+
+main section h1 {
+    font-weight: 700; /* Make the text bold */
+    text-align: center;
+    font-size: 2rem; /* Adjust the font size */
+    margin-top: 30px;
+    margin-bottom: 20px; /* Add space below the heading */
+}
+
+/* Target the <p> tag inside the hero section */
+#hero p {
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    font-size: 1.2rem; /* Adjust font size as needed */
+    line-height: 1.5; /* Adjust line height for better readability */
+}
+
+
+#hero a.cta-button {
+    display: inline-block; /* Ensure it behaves as a button */
+    text-align: center;
+    margin-top: 10px; /* Adjust spacing above the button */
+    padding: 10px 20px; /* Add padding inside the button */
+    background-color: #2FA4DA; /* Adjust background color */
+    color: #fff; /* Text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    font-weight: 700; /* Make text bold */
+}
+
+/* Optional: Add hover effect for the button */
+#hero a.cta-button:hover {
+    background-color: #1A8BCC; /* Darker shade for hover effect */
+}
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text */
+    padding: 20px; /* Adjust padding as needed */
+}
+
+#hero h1 {
+    font-size: 2em; /* Adjust font size as needed */
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+#hero p {
+    margin-bottom: 20px; /* Space below the paragraph */
+}
+
+footer p {
+    margin-bottom: 20px;
+}
+
+
+/* Testimonials Section */
+#testimonials {
+    padding: 40px 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.testimonial {
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly opaque white background */
+    border-radius: 8px;
+    padding: 15px;
+    margin: 20px auto;
+    max-width: 600px; /* Limit the width for better readability */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+#testimonials h2 {
+    font-size: 2em;
+    margin-bottom: 40px;
+    margin-top: 30px;
     text-align: center;
 }
 
-img {
-    border-radius: 50%;
+#testimonials p {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 20px;
 }
 
-body > footer {
-background-color: orange;
-display:flex;
-
+.testimonials-content blockquote {
+    font-style: italic;
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    border-left: 4px solid #2FA4DA; /* Bright Blue border for visual emphasis */
+    background-color: #ffffff; /* White background for blockquotes */
 }
 
-#footer-ul{
-    display:flex;
+.testimonials-content footer {
+    text-align: right;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Footer Section */
+footer {
+    background-color: #2A2A2A; /* Neutral Dark Grey */
+    color: #ffffff; /* White text */
+    padding: 20px;
+    text-align: center;
+}
+
+footer .footer-content nav ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
 }
 
-#footer-ul>div>li{
-    margin-left:12px ;
-    
+footer .footer-content nav ul li {
+    margin: 0 10px;
 }
 
-#footer-ul>div>li>a{
-    color: #ffffff;
+footer .footer-content nav ul li a {
     text-decoration: none;
+    color: #ffffff; /* White text for links */
+}
+
+footer p {
+    margin-top: 10px;
 }
