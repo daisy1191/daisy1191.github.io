@@ -1,34 +1,16 @@
-document.getElementById('activity-form').addEventListener('submit', function(event) {
-    event.preventDefault();
+document.getElementById('tracker-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevents form from submitting the traditional way
 
-    const energy = parseFloat(document.getElementById('energy').value) || 0;
-    const transportation = parseFloat(document.getElementById('transportation').value) || 0;
-    const waste = parseFloat(document.getElementById('waste').value) || 0;
+    // Get form values
+    const energyUse = document.getElementById('energy-use').value;
+    const transport = document.getElementById('transport').value;
 
-    const totalImpact = energy * 0.5 + transportation * 0.2 + waste * 0.3; // Example calculation
-
-    updateChart(totalImpact);
+    // Display results
+    document.getElementById('results').innerHTML = `
+        <p>Energy Use: ${energyUse} kWh</p>
+        <p>Transportation: ${transport} miles</p>
+    `;
 });
 
-function updateChart(totalImpact) {
-    const ctx = document.getElementById('impact-chart').getContext('2d');
-    new Chart(ctx, {
-        type: 'bar',
-        data: {
-            labels: ['Impact'],
-            datasets: [{
-                label: 'Environmental Impact',
-                data: [totalImpact],
-                backgroundColor: '#4BAA4E'
-            }]
-        },
-        options: {
-            responsive: true,
-            plugins: {
-                legend: {
-                    display: false
-                }
-            }
-        }
-    });
-}
+
+

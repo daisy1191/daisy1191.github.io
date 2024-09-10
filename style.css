@@ -3,6 +3,22 @@ body {
     font-family: 'Montserrat', sans-serif;
   }
   
+  html, body {
+    height: 100%; /* Ensure the body and html take full height */
+    margin: 0; /* Remove default margin */
+}
+
+body {
+    background-color: #2FA4DA;
+    background-image: url(gradient-background.png); /* Path to your background image */
+    background-position:center ; /* Keep the image centered */
+    background-repeat: repeat-x; /* Repeats accross page */
+    background-attachment: fixed;
+    background-size: 20px 100%;
+    line-height: 1.6;
+    letter-spacing: 0.5px;   
+}
+
   h1, h2, h3, h4, h5, h6, nav {
     font-family: 'Libre Baskerville', serif;
   }
@@ -19,7 +35,6 @@ body {
     justify-content: space-between; 
     align-items: center; 
     padding: 20px;
-    background-image: url(gradient-background.png);
 }
 
 header a:hover {
@@ -74,9 +89,6 @@ nav ul li a:hover {
     
   }
   
-  body {
-    background-image: url(gradient-background.png);
-  }
 
   footer {
     display: flex;
@@ -125,7 +137,7 @@ main section h1 {
 #hero a.cta-button {
     display: inline-block; /* Ensure it behaves as a button */
     text-align: center;
-    margin-top: 10px; /* Adjust spacing above the button */
+    margin-top: 20px; /* Adjust spacing above the button */
     padding: 10px 20px; /* Add padding inside the button */
     background-color: #2FA4DA; /* Adjust background color */
     color: #fff; /* Text color */
@@ -150,6 +162,7 @@ main section h1 {
 #hero h1 {
     font-size: 2em; /* Adjust font size as needed */
     margin-bottom: 10px; /* Space below the heading */
+    margin-top: 100px;
 }
 
 #hero p {
@@ -160,6 +173,125 @@ footer p {
     margin-bottom: 20px;
 }
 
+/* Intro Section */
+
+#introduction h2 {
+    font-size: 140%;
+    margin-top: 200px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    
+}
+
+#introduction p {
+    font-size: 120%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+/* Features Section */
+
+#features h2 {
+    font-size: 2rem;
+    display:flex;
+    text-align: center;
+    margin-top: 200px;
+    margin-left: 60px;
+}
+
+#features p {
+    display: flex;
+    text-align: left;
+    justify-content: space-around;
+    margin-left:60px ;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+.feature-list li span {
+    display: inline-block;
+    margin-bottom: 125px;
+    font-weight: 500;
+    font-size: 120%;
+  
+    
+ }
+
+ div.step-image img {
+    width: 500px;
+    height: auto;
+ }
+
+/* How It Works Section */
+
+#how-it-works h2 {
+    display:flex ;
+    text-align: center;
+    font-size: 140%;
+    margin-top: 200px;
+    margin-left: 45px;
+    margin-bottom: 20px;
+}
+
+#how-it-works p {
+    display: flex;
+    text-align: left;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+#how-it-works {
+    padding: 2rem;
+  }
+  
+  #how-it-works h2 {
+    font-size: 2rem; /* Adjust heading size */
+  }
+  
+  #how-it-works p {
+    font-size: 1.1rem; /* Adjust paragraph size */
+    
+    
+  }
+  
+  .steps {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; /* Space between steps */
+  }
+  
+  .step {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem; /* Space between image and text */
+  }
+  
+  .step-image img {
+    width: 150px; /* Adjust based on design needs */
+    height: auto;
+  }
+  
+  .step-text {
+    max-width: 600px; /* Adjust based on design needs */
+  }
+  
+  .step-text h3 {
+    font-size: 1.5rem; /* Heading size */
+    margin-bottom: 0.5rem;
+    margin-top: 20px;
+  }
+  
+  .step-text p {
+    font-size: 1rem; /* Paragraph size */
+  }
+  
 
 /* Testimonials Section */
 #testimonials {
@@ -178,10 +310,11 @@ footer p {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
 }
 
+
 #testimonials h2 {
     font-size: 2em;
     margin-bottom: 40px;
-    margin-top: 30px;
+    margin-top: 110px;
     text-align: center;
 }
 
@@ -233,4 +366,403 @@ footer .footer-content nav ul li a {
 
 footer p {
     margin-top: 10px;
+}
+
+#contact  {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text */
+    padding: 20px; /* Adjust padding as needed */
+       
+}
+
+#contact h1 {
+    font-weight: 700;
+    font-size: 2em;
+    margin-bottom: 20px;
+    margin-top: 100px;
+}
+
+#contact p {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-left: 70px;
+    margin-right: 70px;
+    display: flex;
+    font-size: 1.2rem; /* Adjust font size as needed */
+    line-height: 1.5; /* Adjust line height for better readability */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px; /* Adjust as necessary */
+    margin: 0 auto;
+}
+
+label {
+    margin-bottom: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+input, textarea {
+    border: 2px solid #333;  /* Stroke */
+    background-color: transparent; /* No fill */
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+    transition: border-color 0.3s, background-color 0.3s; /* Smooth transition */
+}
+
+input:focus, textarea:focus {
+    border-color: #FA9507; /* Change border color on focus */
+    background-color: #f0f0f0; /* Slight background change on focus */
+    outline: none; /* Remove default focus outline */
+}
+
+button {
+    padding: 10px 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: white;
+    align-self: center;
+    background-color: #333;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 250px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+button:hover {
+    background-color: #2FA4DA;
+}
+
+textarea {
+    height: 150px; /* Adjust this value for a taller box */
+    resize: vertical; /* Allow users to resize vertically if needed */
+}
+
+
+
+
+#about  {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text */
+    padding: 20px; /* Adjust padding as needed */
+    
+}
+
+#about h1 {
+    font-weight: 700;
+    font-size: 2em;
+    margin-bottom: 20px;
+    margin-top: 100px;}
+
+#about p.mission {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 100px;
+    margin-left: 70px;
+    margin-right: 70px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2rem; /* Adjust font size as needed */
+    line-height: 1.5; /* Adjust line height for better readability */
+}
+
+h3.the-vision  {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem
+ }
+
+ h3.the-process {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem
+ }
+
+ #about.mission p {
+    margin-bottom: 100px;
+    margin-top: 4px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+ }
+
+ #about.vision p {
+    margin-bottom: 100px;
+    margin-top: 4px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+ }
+
+ #about p {
+    margin-bottom: 100px;
+    margin-top: 4px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+ }
+
+ #why-it-matters {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between each value and paragraph */
+}
+
+#why-it-matters .value-group {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: 100px;
+    gap: 20px; /* Space between the text and image */
+}
+
+#why-it-matters h3 {
+    font-size: 1.2em;
+    margin-right: 8px;
+    flex-shrink: 0; /* Prevent shrinking of heading */
+    width: 150px; /* Fixed width for headings */
+}
+
+#why-it-matters p {
+    font-size: 1em;
+    text-align: left;
+    flex: 1; /* Allow paragraph to take up remaining space */
+    max-width: 500px; /* Ensures consistent width for all paragraphs */
+    margin-top: 0;
+    margin-bottom: 80px;
+}
+
+#why-it-matters .value-group img {
+    width: 150px;
+    height: auto;
+    flex-shrink: 0; /* Prevent the image from shrinking */
+}
+
+  
+  div.about-image img {
+    width: 350px;
+    height: auto;
+    margin-right: 40px;
+    margin-bottom: 100px;
+    padding-bottom: 60px;
+
+  }
+  
+
+
+#about h2 {
+    font-size: 1.5rem;
+    margin-bottom: 80px;
+}
+
+#tracker  {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text */
+    padding: 20px; /* Adjust padding as needed */
+    
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    font-size: 1em;
+    color: white;
+    background-color: #333;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.results {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+#tracker h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    margin-top: 100px;
+}
+
+#tracker p {
+    text-align: center;
+    font-size: 1.2rem; /* Adjust font size as needed */
+    line-height: 1.5; /* Adjust line height for better readability */
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-left: 70px;
+    margin-right: 70px;
+    display: flex;
+
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+
+/* Remove default link styling for this specific link */
+.intro-section .start-tracking-link {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit the color of the parent */
+}
+
+.intro-section p {
+text-align: center;
+margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 120px;
+    margin-right: 120px;
+
+}
+
+/* Style the heading inside the link */
+.intro-section .start-tracking-heading {
+    color: #333; /* Set a neutral color (change this as needed) */
+    font-size: 2rem; /* Adjust the size to your preference */
+    font-weight: bold; /* Make the text bold if desired */
+    cursor: pointer; /* Add a pointer cursor to indicate it's clickable */
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* Optional: Add hover effects */
+.intro-section .start-tracking-link:hover .start-tracking-heading {
+    color: #2FA4DA; /* Change color on hover (optional) */
+    text-decoration: none; /* Ensure no underline on hover */
+}
+
+
+/* Base styles (mobile-first approach) */
+body {
+    font-size: 16px;
+}
+
+header {
+    display: flex;
+    flex-direction: column; /* Stack items vertically on small screens */
+}
+
+nav ul {
+    display: block; /* Stack navigation items vertically */
+}
+
+/* Styles for tablets and larger screens */
+@media (min-width: 768px) {
+    header {
+        flex-direction: row; /* Align items horizontally on larger screens */
+    }
+
+    nav ul {
+        display: flex; /* Display navigation items side by side */
+    }
+}
+
+ul {
+    list-style: none; /* Removes the default bullet points */
+    padding: 0;
+    margin: 0;
+  }
+  
+  ul li {
+    margin-bottom: 10px; /* Add some space between list items */
+  }
+  
+  ul li img {
+    width:500px;
+    height: auto;
+    margin-top: 50px;
+
+  }
+
+  section div img {
+    width:450px;
+    height: auto;
+  }
+
+
+
+/* Styles for desktops and larger screens */
+@media (min-width: 1024px) {
+    body {
+        font-size: 18px;
+    }
+
+    header {
+        padding: 20px 40px;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+section#call-to-action h2 {
+    font-size: 140%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+section#call-to-action p {
+    font-size: 120%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-left: 120px;
+    margin-right: 120px;
 }

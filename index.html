@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Ecotrack</title>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="base.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -28,7 +29,7 @@
     <main>
         <section id="hero">
             <h1>Welcome to Ecotrack</h1>
-            <p>Your personal environmental impact tracker and mindfulness journal.</p>
+            <p>Your Personal Environmental Impact Tracker.</p>
             <a href="tracker.html" class="cta-button">Get Started</a>
         </section>
         
@@ -45,39 +46,58 @@
 <section id="features">
     <h2>Key Features</h2>
     <p>Discover the benefits of using EcoTracker to make a positive change. From tracking your energy consumption to monitoring waste production, we provide comprehensive insights and actionable tips.</p>
-    <ul>
-        <li><img src="icon-activity.png" alt="Activity Logging Icon"> Record your daily activities easily.</li>
-        <li><img src="icon-reports.png" alt="Impact Reports Icon"> Visualize your environmental impact with detailed charts.</li>
-        <li><img src="icon-tips.png" alt="Personalized Tips Icon"> Receive tailored recommendations to improve your sustainability.</li>
+    <ul class="feature-list"> 
+        <li><img src="Activity Logging Icon (Notepad and Pencil).png" alt="Activity Logging Icon"> <span>Record your daily activities easily.</span></li>
+        <li><img src="Impact Reports Icon (Bar Chart with Leaf).png" alt="Impact Reports Icon"><span>Visualise your environmental impact with detailed charts.</span></li>
+        <li><img src="_Personalized Tips Icon (Lightbulb with Leaves).png" alt="Personalized Tips Icon"> <span>Receive tailored recommendations to improve your sustainability.</span></li>
     </ul>
 </section>
+
 
 <!-- How It Works Section -->
 <section id="how-it-works">
     <h2>How It Works</h2>
-    <p>Get started in three simple steps: log your activities, view your impact, and follow personalized suggestions for a greener lifestyle.</p>
+    <p>Get started in three simple steps: log your activities, view your impact, and follow personalised suggestions for a greener lifestyle.</p>
     <div class="steps">
         <div class="step">
-            <img src="step1.png" alt="Log Your Activities">
-            <h3>Log Your Activities</h3>
+            <div class="step-image">
+                <img src="Log Your Activities Graphic (Calendar with Icons).png" alt="Log Your Activities">
+            </div>
+            <div class="step-text">
+                <h3>Log Your Activities</h3>
+                <p>Logging your activities is the first step in tracking your environmental impact. Our platform allows you to input daily activities such as energy consumption, transportation choices, and waste production. By providing detailed entries, you can get a comprehensive view of your habits and how they affect the environment. Our user-friendly interface makes it easy to log activities and visualise your data over time. This foundational step helps you understand where your environmental footprint originates and sets the stage for meaningful change.</p>
+            </div>
         </div>
         <div class="step">
-            <img src="step2.png" alt="View Your Impact">
-            <h3>View Your Impact</h3>
+            <div class="step-image">
+                <img src="View Your Impact Graphic (Earth with Charts).png" alt="View Your Impact">
+            </div>
+            <div class="step-text">
+                <h3>View Your Impact</h3>
+                <p>Once you've logged your activities, you can view detailed reports on your environmental impact. Our system generates impact reports that illustrate the effect of your activities on the environment. You'll receive visualisations such as charts and graphs that make it easy to see trends and patterns. These insights can help you identify areas where you can make improvements and monitor your progress over time. By understanding your impact, you can make more informed decisions and adopt more sustainable practices.</p>
+            </div>
         </div>
         <div class="step">
-            <img src="step3.png" alt="Follow Personalized Tips">
-            <h3>Follow Personalized Tips</h3>
+            <div class="step-image">
+                <img src="Follow Personalized Tips Graphic (Road with Signs).png" alt="Follow Personalized Tips">
+            </div>
+            <div class="step-text">
+                <h3>Follow Personalised Tips</h3>
+                <p>Based on your logged activities and impact reports, we provide customised tips to help you reduce your environmental footprint. These tips are tailored to your specific habits and goals, offering practical advice and actionable steps you can take. Whether it's suggestions for reducing energy consumption, alternative transportation options, or waste reduction strategies, our recommendations are designed to fit your lifestyle and help you achieve your sustainability goals. By following these tips, you can make a significant difference and contribute to a healthier planet!</p>
+            </div>
         </div>
     </div>
 </section>
 
 <!-- Call to Action Section -->
-<section id="call-to-action">
-    <h2>Start Tracking Today!</h2>
-    <p>Join us in making a difference. Sign up now to begin your journey toward a more sustainable lifestyle.</p>
-    <a href="signup.html" class="cta-button">Get Started</a>
+<!-- Intro Section -->
+<section id="intro" class="intro-section">
+    <a href="tracker.html" class="start-tracking-link">
+        <h2 class="start-tracking-heading">Start Tracking Today!</h2>
+    </a>
+    <p>Get started with monitoring your environmental impact by logging your daily activities. Our platform provides you with the tools you need to track your progress and make sustainable changes.</p>
 </section>
+
 
 <!-- Testimonials Section -->
 <section id="testimonials">
@@ -92,7 +112,7 @@
     <div class="testimonial">
         <p class="user-name">User 2</p>
         <blockquote>
-            <p>"I love the detailed impact reports and personalized tips. It's been a great tool in my journey towards a more sustainable lifestyle."</p>
+            <p>"I love the detailed impact reports and personalised tips. It's been a great tool in my journey towards a more sustainable lifestyle."</p>
         </blockquote>
     </div>
 </section>
