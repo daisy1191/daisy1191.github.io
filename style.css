@@ -560,6 +560,7 @@ h3.the-vision  {
 #why-it-matters .value-group img {
     width: 150px;
     height: auto;
+    border-radius: 30px;
     flex-shrink: 0; /* Prevent the image from shrinking */
 }
 
@@ -569,9 +570,8 @@ h3.the-vision  {
     height: auto;
     margin-right: 40px;
     margin-bottom: 100px;
-    padding-bottom: 60px;
-
-  }
+    border-radius: 10px;
+}
   
 
 
@@ -580,33 +580,32 @@ h3.the-vision  {
     margin-bottom: 80px;
 }
 
-#tracker  {
+#tracker {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center items horizontally */
-    text-align: center; /* Center text */
-    padding: 20px; /* Adjust padding as needed */
-    
+    align-items: center;
+    text-align: center;
+    padding: 20px;
 }
 
-form {
+#tracker-form {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-label {
+#tracker-form label {
     font-weight: bold;
 }
 
-input {
+#tracker-form input {
     padding: 10px;
     font-size: 1em;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
 
-button {
+#tracker-form button {
     padding: 10px;
     font-size: 1em;
     color: white;
@@ -616,7 +615,7 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+#tracker-form button:hover {
     background-color: #555;
 }
 
@@ -624,6 +623,7 @@ button:hover {
     margin-top: 20px;
     font-size: 1.2em;
 }
+
 
 #tracker h1 {
     font-size: 2em;
